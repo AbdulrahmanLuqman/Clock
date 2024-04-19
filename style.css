@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-image: url(./eat-sleep-code-repeat-background-digital-art-hd-wallpaper-uhdpaper.com-249@0@g.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.clock{
+    width: 30rem;
+    height: 30rem;
+    border: 20px solid white;
+    border-radius: 50%;
+    position: relative;
+    padding: 2rem;
+    box-shadow: 0 0 0px 6px whitesmoke, inset 0 0 0 3px gray, inset 0 0 0 10px rgb(207, 206, 206), 0 0 0 10px white;
+}
+
+.clock-face{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px);
+}
+.hand{
+    width: 50%;
+    height: 6px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
